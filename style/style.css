@@ -13,3 +13,7 @@ body{
     gap: 5%;
     background-color: rgba(244, 240, 233, 1);
 }
+
+body.mobile{
+    gap:0;
+}

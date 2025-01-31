@@ -9,6 +9,16 @@ let complited_tasks = [];
 let tasks_count = 0;
 
 let showing = false;
+let size = window.innerWidth;
+
+if (size < 800){
+    document.querySelector("aside").style.display = "none";
+
+    for (let elem of document.querySelectorAll('*')){
+        elem.classList.add('mobile')
+    }
+
+}
 
 input_line.addEventListener("keypress", (event)=> {
     if ((event.keyCode == 13) && (document.activeElement == input_line)){
@@ -59,7 +69,10 @@ function change_text(event) {
     let task_content = task.querySelectorAll('*');
     task.innerHTML = "";
     
-    task.insertAdjacentHTML("afterbegin", '<input class="task_editor" type="text" focus="true">');
+    if (size < 800)
+        task.insertAdjacentHTML("afterbegin", '<input class="task_editor mobile" type="text" focus="true">');
+    else
+        task.insertAdjacentHTML("afterbegin", '<input class="task_editor" type="text" focus="true">');
     let input = task.querySelector('input');
     input.value = task_content[1].textContent;
     input.focus();
@@ -132,11 +145,20 @@ function toggle_showed_blocks(){
 
 function generate_block(value){
     let result = "";
-    result+='<li class="task" data-id="'+tasks_count+'">';
-    result+='<div class="view"><input type="checkbox" class="custom_task_checkbox color_touch">';
-    result+='<label class="task">'+value+'</label>'
-    result+='<button class="delete"></button>'
-    result+='</div></li>'
+    if (size < 800){
+        result+='<li class="task mobile" data-id="'+tasks_count+'">';
+        result+='<div class="view mobile"><input type="checkbox" class="custom_task_checkbox color_touch mobile">';
+        result+='<label class="task mobile">'+value+'</label>'
+        result+='<button class="delete mobile"></button>'
+        result+='</div></li>'
+    } else {
+        result+='<li class="task" data-id="'+tasks_count+'">';
+        result+='<div class="view"><input type="checkbox" class="custom_task_checkbox color_touch">';
+        result+='<label class="task">'+value+'</label>'
+        result+='<button class="delete"></button>'
+        result+='</div></li>'
+    }
+    
     return result;
 }
 

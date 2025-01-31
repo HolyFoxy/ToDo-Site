@@ -5,3 +5,7 @@ li.task{
     display: contents;
     position: relative;
 }
+
+li.mobile{
+    display: contents;
+}

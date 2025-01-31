@@ -17,6 +17,10 @@ label.task.complited{
     color:#adb0b3;
 }
 
+label.task.mobile{
+    font-size: 17px;
+}
+
 .custom_task_checkbox + label.task::before{
     content: '';
     width: 34px;

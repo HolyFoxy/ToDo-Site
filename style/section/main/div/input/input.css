@@ -11,6 +11,12 @@ input[type="text"].input_line{
     border: none;
 }
 
+input[type="text"].input_line.mobile{
+    font-size: 16px;
+    height: 43px;
+    border: none;
+}
+
 input[type="text"].input_line:focus{
     outline: none;
 }

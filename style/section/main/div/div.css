@@ -9,8 +9,12 @@ div.content_container{
     flex-direction: column;
     gap:0px;
     width: 550px;
-    padding: 0px 0px 0px 0px; /*при отсутствии кнопки нужно ставить 0 62 0 0 отступы*/
+    padding: 0px 0px 0px 0px;
     box-shadow: 0px 3px 6px 0px #6e6e6e;
+}
+
+div.content_container.mobile{
+    min-width: 320px;
 }
 
 div.content_container.not_empty{
@@ -45,6 +49,11 @@ div.content_container_footer{
     font-size: 18px;
     display: flex;
     justify-content: space-between;
+}
+
+div.content_container_footer.mobile{
+    padding: 11px 8px;
+    align-items: center;
 }
 
 div.content_container_footer::before{

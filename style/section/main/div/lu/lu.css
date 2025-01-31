@@ -16,3 +16,7 @@ lu.filters{
     width: -webkit-fill-available;
     margin-right: 15px;
 }
+
+lu.filters.mobile{
+    gap: 3px;
+}

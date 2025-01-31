@@ -12,3 +12,7 @@ button.filter.active{
 button.filter:focus{
     box-shadow: 0 0 5px 2px #ce4646;
 }
+
+button.filter.mobile{
+    font-size: 10px;
+}

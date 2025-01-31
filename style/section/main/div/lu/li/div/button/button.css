@@ -26,3 +26,8 @@ button.delete::after{
     width: 35px;
     height: 35px;
 }
+
+button.delete.mobile{
+    left: unset;
+    right: 13px;
+}
