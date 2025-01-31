@@ -1,0 +1,16 @@
+h2{
+    font-size:59px;
+    line-height: 73.16px;
+    font-weight: 700;
+}
+
+h2.mobile{
+    font-size: 34px;
+    line-height: 38.08px;
+    font-weight: 700;
+    letter-spacing: -2%;
+}
+
+h2.no_margin{
+    margin: 0;
+}

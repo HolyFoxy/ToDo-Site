@@ -1,0 +1,21 @@
+@import "./label/label.css";
+
+input[type="checkbox"].custom_checkbox{
+    display: none;
+}
+
+input[type="text"].input_line{
+    font-size: 24px;
+    height: 43px;
+    width: -webkit-fill-available;
+    border: none;
+}
+
+input[type="text"].input_line:focus{
+    outline: none;
+}
+
+input[type="text"].input_line::placeholder{
+    font-style: italic;
+    color:#a6a6a6;
+}

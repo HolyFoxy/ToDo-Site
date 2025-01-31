@@ -1,0 +1,16 @@
+h3{
+    font-size: 35px;
+    line-height: 42.7px;
+    font-weight: 500;
+}
+
+h3.mobile{
+    font-size: 23px;
+    line-height: 27.6px;
+    font-weight: 700;
+    letter-spacing: -4%;
+}
+
+h3.no_margin{
+    margin:0;
+}

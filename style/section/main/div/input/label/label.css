@@ -1,0 +1,27 @@
+.custom_checkbox + label{
+    align-items: center;
+    display: flex;
+    font-size: 0;
+    height: 43px;
+    justify-content: center;
+    width: 43px
+}
+
+.custom_checkbox:checked + label::before{
+    color: #484848
+}
+
+.custom_checkbox + label::before{
+    color: #949494;
+    content: "❯";
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px 27px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg)
+}
+
+
+label.undisplayed{
+    display:none;
+}

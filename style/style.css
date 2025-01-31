@@ -1,0 +1,15 @@
+@import "./font-style/h1.css";
+@import "./font-style/h2.css";
+@import "./font-style/h3.css";
+@import "./font-style/p.css";
+@import "./aside/aside.css";
+@import "./section/section.css";
+@import "./footer/footer.css";
+
+body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+    background-color: rgba(244, 240, 233, 1);
+}

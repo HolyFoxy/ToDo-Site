@@ -1,0 +1,28 @@
+button.delete{
+    position: absolute;
+    display: none;
+    left: 500px;
+    top: 15px;
+    width: 35px;
+    height: 35px;
+    background-color: unset;
+}
+
+div.view:hover > button.delete{
+    display:block;
+    
+    border-radius: 20px;
+    border: unset;
+    text-align: center;
+    padding: 10px;
+}
+
+button.delete:hover{
+    background-color: beige;
+}
+
+button.delete::after{
+    content: "X";
+    width: 35px;
+    height: 35px;
+}

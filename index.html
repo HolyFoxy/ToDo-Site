@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A ToDo-site written with JS">
+    <meta name="keywords" content="ToDo, ToDoS, todos, todo, to do site">
+
+    <title>ToDo-creature</title>
+
+    <link href="./style/style.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside class="site_left_toggle_zone">
+        <p class="big no_margin adaptise">Your advertisement could be here...</p>
+    </aside>
+    <section class="site_main_zone">
+        <header>
+            <div class="main_zone_description">
+                <h1 class="no_margin colored">ToDo-site</h1>
+                <p class="big no_margin gray">This's a site, where you can note your tasks to do</p>
+            </div>
+        </header>
+        <main>
+            <div class="content_container">
+                <div class="input_container colored">
+                    <div class="checkbox_container" style="display: none;">
+                        <input type="checkbox" id="do_all_check" class="custom_checkbox">
+                        <label for="do_all_check"></label>
+                    </div>
+                    <input type="text" placeholder="Enter here your task" autofocus class="input_line color_touch" style="padding-left: 52px;">
+                </div>
+                <div class="tasks_container">
+                    <lu class="tasks">
+                    </lu>
+                </div>
+                <div class="content_container_footer" style="display: none;">
+                    <span class="counter"><strong>0</strong> item left</span>
+                    <lu class="filters">
+                        <li><button class="filter active" onclick="showAll(this)">All</button></li>
+                        <li><button class="filter" onclick="showActive(this)">Active</button></li>
+                        <li><button class="filter" onclick="showComplited(this)">Complited</button></li>
+                    </lu>
+                    <span class="clear" onclick="clearComplited()" style="display: none;">Clear complited</span>
+                </div>
+            </div>
+        </main>
+        <footer class="main_zone_info">
+            <p class="small gray no_margin">Double click on task to edit it.</p>
+            <p class="small gray no_margin">Your advertisement could be here.</p>
+        </footer>
+    </section>
+    <footer class="site_info_zone">
+
+    </footer>
+    <script src="./script/script.js"></script>
+</body>
+</html>

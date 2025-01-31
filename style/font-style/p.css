@@ -1,0 +1,50 @@
+p.big{
+    font-size: 23px;
+    line-height: 28.06px;
+    font-weight: 700;
+}
+
+p.big.mobile{
+    font-size: 16px;
+    line-height: 22.72px;
+    font-weight: 700;
+}
+
+p.normal{
+    font-size: 20px;
+    line-height: 28.4px;
+    font-weight: 400;
+}
+
+p.normal.mobile{
+    font-size: 16px;
+    line-height: 22.72px;
+    font-weight: 400;
+}
+
+p.small{
+    font-size: 17px;
+    line-height: 24.14px;
+    font-weight: 400;
+    letter-spacing: -1%;
+}
+
+p.small.mobile{
+    font-size: 16px;
+    line-height: 22.72px;
+    font-weight: 400;
+    letter-spacing: -1%;
+}
+
+p.no_margin{
+    margin:0;
+}
+
+p.gray{
+    color:gray;
+}
+
+p.adaptise{
+    width: auto;
+    word-break: break-word;
+}

@@ -1,0 +1,21 @@
+h1{
+    font-size: 96px;
+    font-weight: 700;
+    line-height: 104.64px;
+    letter-spacing: 0.02em;
+}
+
+h1.mobile{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 38.08px;
+    letter-spacing: 0.02em;
+}
+
+h1.no_margin{
+    margin:0;
+}
+
+h1.colored{
+    color:#b83f45;
+}

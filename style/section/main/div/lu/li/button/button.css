@@ -1,0 +1,14 @@
+button.filter{
+    background-color: unset;
+    border: unset;
+    padding-top: 2px;
+}
+
+button.filter.active{
+    border: 1px solid #ce4646;
+    border-radius: 3px;
+}
+
+button.filter:focus{
+    box-shadow: 0 0 5px 2px #ce4646;
+}

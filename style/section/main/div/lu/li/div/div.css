@@ -1,0 +1,16 @@
+@import "./button/button.css";
+@import "./input/input.css";
+@import "./label/label.css";
+
+div.view{
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+    position: relative;
+    border-bottom: 0.1px solid #ededed;
+    min-height: 65px;
+}
+
+div.view.colored{
+    box-shadow: 0px 0px 5px 1px #b83f45;
+}

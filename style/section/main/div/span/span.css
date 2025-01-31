@@ -1,0 +1,10 @@
+span.counter{
+    text-align: left;
+    float: left;
+}
+
+span.clear{
+    text-align: right;
+    float: right;
+    z-index: 2;
+}

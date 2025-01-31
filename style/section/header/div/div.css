@@ -1,0 +1,5 @@
+div.main_zone_description{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
